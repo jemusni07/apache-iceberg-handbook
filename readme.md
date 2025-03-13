@@ -1,4 +1,4 @@
 This is a collection of notes, implementations and examples for Apache Iceberg table fornat. 
 
-- [Data Modification Strategies](./data-modification-strategies.md)
-- [GDPR Compliance](./gpdr-compliance.md)
+- [Data Modification Strategies](./learn/data-modification-strategies.md)
+- [GDPR Compliance](./learn/gpdr-compliance.md)

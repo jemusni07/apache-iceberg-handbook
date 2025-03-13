@@ -1,1 +1,5 @@
 .DS_Store
+# Ignore .env file with credentials
+.env
+notebooks/.ipynb_checkpoints/
+notebooks/.Trash-0/
