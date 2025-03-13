@@ -8,3 +8,5 @@ This is a collection of notes, implementations and examples for Apache Iceberg t
 To be able to run the notebooks, you need to download [Docker CLI](https://docs.docker.com/get-started/get-docker/) and [Docker Compose](https://github.com/docker-archive/compose-cli/blob/main/INSTALL.md).
 
 Then start the docker containers with `docker-compose up` command.
+
+This will give you an environment for running Spark on Iceberg Tables using Minio as the storage backend.
