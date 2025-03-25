@@ -1,74 +1,74 @@
 {
-    "format-version": 2,
-    "table-uuid": "ff988440-bf07-4d0a-a172-caeb1c67e67d",
-    "location": "s3://warehouse/default/db/orders",
-    "last-sequence-number": 0,
-    "last-updated-ms": 1741897628742,
-    "last-column-id": 4,
-    "current-schema-id": 0,
-    "schemas": [
-      {
-        "type": "struct",
-        "schema-id": 0,
-        "fields": [
-          {
-            "id": 1,
-            "name": "order_id",
-            "required": false,
-            "type": "long"
-          },
-          {
-            "id": 2,
-            "name": "customer_id",
-            "required": false,
-            "type": "long"
-          },
-          {
-            "id": 3,
-            "name": "order_amount",
-            "required": false,
-            "type": "decimal(10, 2)"
-          },
-          {
-            "id": 4,
-            "name": "order_ts",
-            "required": false,
-            "type": "timestamptz"
-          }
-        ]
-      }
-    ],
-    "default-spec-id": 0,
-    "partition-specs": [
-      {
-        "spec-id": 0,
-        "fields": [
-          {
-            "name": "order_ts_hour",
-            "transform": "hour",
-            "source-id": 4,
-            "field-id": 1000
-          }
-        ]
-      }
-    ],
-    "last-partition-id": 1000,
-    "default-sort-order-id": 0,
-    "sort-orders": [
-      {
-        "order-id": 0,
-        "fields": []
-      }
-    ],
-    "properties": {
-      "owner": "root",
-      "write.parquet.compression-codec": "zstd"
-    },
-    "current-snapshot-id": -1,
-    "refs": {},
-    "snapshots": [],
-    "statistics": [],
-    "partition-statistics": [],
-    "snapshot-log": [],
-    "metadata-log": []
-  }
+  "format-version": 2,
+  "table-uuid": "871252e4-a3ef-4ac5-9fee-8805d729c270",
+  "location": "s3://warehouse/catalog/sales/orders",
+  "last-sequence-number": 0,
+  "last-updated-ms": 1742873526315,
+  "last-column-id": 4,
+  "current-schema-id": 0,
+  "schemas": [
+    {
+      "type": "struct",
+      "schema-id": 0,
+      "fields": [
+        {
+          "id": 1,
+          "name": "order_id",
+          "required": false,
+          "type": "long"
+        },
+        {
+          "id": 2,
+          "name": "customer_id",
+          "required": false,
+          "type": "long"
+        },
+        {
+          "id": 3,
+          "name": "order_amount",
+          "required": false,
+          "type": "decimal(10, 2)"
+        },
+        {
+          "id": 4,
+          "name": "order_ts",
+          "required": false,
+          "type": "timestamptz"
+        }
+      ]
+    }
+  ],
+  "default-spec-id": 0,
+  "partition-specs": [
+    {
+      "spec-id": 0,
+      "fields": [
+        {
+          "name": "order_ts_day",
+          "transform": "day",
+          "source-id": 4,
+          "field-id": 1000
+        }
+      ]
+    }
+  ],
+  "last-partition-id": 1000,
+  "default-sort-order-id": 0,
+  "sort-orders": [
+    {
+      "order-id": 0,
+      "fields": []
+    }
+  ],
+  "properties": {
+    "owner": "root",
+    "write.parquet.compression-codec": "zstd"
+  },
+  "current-snapshot-id": -1,
+  "refs": {},
+  "snapshots": [],
+  "statistics": [],
+  "partition-statistics": [],
+  "snapshot-log": [],
+  "metadata-log": []
+}
