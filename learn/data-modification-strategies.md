@@ -7,7 +7,7 @@ Both data modification strategies have their own uses and will really depend on 
 
 Copy On Write is optimized for read-heavy workloads where updates and deletes are infrequent. When data is modified, Iceberg rewrites the entire data files containing the affected records. This creates a new version with all changes applied, making the old file obsolete (historical).
 
-![CoW](./images/copy_on_write.png)
+![CoW](/images/copy_on_write.png)
 
 ### Performance characteristics:
 
@@ -33,7 +33,7 @@ Copy On Write is optimized for read-heavy workloads where updates and deletes ar
 
 Merge On Read is optimized for write-heavy workloads. Iceberg records changes in separate delta files. These deltas are applied on-the-fly during queries.
 
-![MoR](./images/merge_on_read.png)
+![MoR](/images/merge_on_read.png)
 
 
 ### Performance characteristics:
